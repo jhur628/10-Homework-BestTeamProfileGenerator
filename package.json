@@ -1,0 +1,28 @@
+{
+  "name": "10-homework-bestteamprofilegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhur628/10-Homework-BestTeamProfileGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhur628/10-Homework-BestTeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/jhur628/10-Homework-BestTeamProfileGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.4.3"
+  }
+}
