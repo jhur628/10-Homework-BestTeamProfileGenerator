@@ -1,7 +1,9 @@
-
+const renderManager = require("./renderManager");
+const renderEngineer = require("./renderEngineer");
+const renderIntern = require("./renderIntern")
 
 // Function to render HTML
-const renderHTML = () => {
+const renderHTML = (team) => {
     return `<!DOCTYPE html>
     <html>
         <head>
@@ -16,3 +18,4 @@ const renderHTML = () => {
     </html>
     `
 }
+module.exports = renderHTML;

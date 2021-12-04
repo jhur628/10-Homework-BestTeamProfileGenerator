@@ -2,6 +2,7 @@
 const Manager = require("./lib/manager");
 const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
+const renderHTML = require("./src/renderHTML");
 
 // Add npm
 const fs = require("fs");
@@ -104,7 +105,6 @@ const managerPrompt = () => {
 
 // Function to prompt user to add more roles
 const addMenu = () => {
-    console.log(team);
     inquirer.prompt([
         {
             type: "list",
@@ -125,7 +125,9 @@ const addMenu = () => {
             internPrompt();
           break;
           case "Done with employee list":
-            renderHTML(); // placeholder for function I will make
+            let html = renderHTML(team);
+            fs.writeFile("./dist/team.html", html, (err) =>
+            err ? console.log(err) : console.log('Successfully created HTML file!'))
           break;
         }
 })}
