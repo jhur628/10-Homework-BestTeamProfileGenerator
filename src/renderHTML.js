@@ -13,6 +13,21 @@ const renderManager = (managerData) => {
     `
 }
 
+// Function to plug in engineers info cards to HTML
+const renderEngineer = (engineerData) => {
+    return `
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">${engineerData.name}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Manager</h6>
+                <p class="card-text">ID: ${engineerData.id}</p>
+                <a href="mailto:${engineerData.email}">${engineerData.email}</a>
+                <p class="card-text">Github: <a href="https://github.com/${engineerData.github}" target="_blank">https://github.com/${engineerData.github}</a></p>
+            </div>
+        </div>
+    `
+}
+
 // Function to render HTML
 const renderHTML = (team) => {
     let cardArray = [];
@@ -24,6 +39,11 @@ const renderHTML = (team) => {
         if (role === "Manager") {
             const managerCard = renderManager(employee);
             cardArray.push(managerCard);
+        }
+
+        if (role === "Engineer") {
+            const engineerCard = renderEngineer(employee);
+            cardArray.push(engineerCard)
         }
     }
 
