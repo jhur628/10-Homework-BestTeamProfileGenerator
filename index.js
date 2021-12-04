@@ -104,6 +104,7 @@ const managerPrompt = () => {
 
 // Function to prompt user to add more roles
 const addMenu = () => {
+    console.log(team);
     inquirer.prompt([
         {
             type: "list",
@@ -124,7 +125,7 @@ const addMenu = () => {
             internPrompt();
           break;
           case "Done with employee list":
-            renderCards(); // placeholder for function I will make
+            renderHTML(); // placeholder for function I will make
           break;
         }
 })}
