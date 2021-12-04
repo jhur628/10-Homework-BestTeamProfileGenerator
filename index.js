@@ -10,34 +10,7 @@ const inquirer = require("inquirer");
 // Make an object for the team
 let team = [];
 
-// Function to prompt user to add more roles
-const addMenu = () => {
-    inquirer.prompt([
-        {
-            type: "list",
-            name: "newEmployee",
-            message: "Add a new employee?",
-            choices: [
-                "Engineer",
-                "Intern",
-                "Done with employee list"
-            ]
-        }
-    ]).then(data => {
-        switch (data.employeeType) {
-          case "Engineer":
-            engineerPrompt();
-          break;
-          case "Intern":
-            internPrompt();
-          break;
-          case "Done with employee list":
-            renderCards(); // placeholder for function I will make
-          break;
-        default:
-          console.log("Choose an employee you want to add!");
-        }
-})}
+
 
 // Function that have questions to prompt for intern
 const internPrompt = () => {
@@ -128,6 +101,33 @@ const managerPrompt = () => {
         addMenu();
     })
 }
+
+// Function to prompt user to add more roles
+const addMenu = () => {
+    inquirer.prompt([
+        {
+            type: "list",
+            name: "newEmployee",
+            message: "Add a new employee?",
+            choices: [
+                "Engineer",
+                "Intern",
+                "Done with employee list"
+            ]
+        }
+    ]).then(data => {
+        switch (data.newEmployee) {
+          case "Engineer":
+            engineerPrompt();
+          break;
+          case "Intern":
+            internPrompt();
+          break;
+          case "Done with employee list":
+            renderCards(); // placeholder for function I will make
+          break;
+        }
+})}
 
 // Start app with managerPrompt function
 managerPrompt();
