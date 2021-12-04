@@ -97,6 +97,7 @@ const managerPrompt = () => {
             message: "What is your manager's office number?"
         }
     ]).then(data => {
+        
         const manager = new Manager(data.name, data.id, data.email, data.officeNumber);
         team.push(manager);
         addMenu();
@@ -125,6 +126,7 @@ const addMenu = () => {
             internPrompt();
           break;
           case "Done with employee list":
+            console.log(team);
             let html = renderHTML(team);
             fs.writeFile("./dist/team.html", html, (err) =>
             err ? console.log(err) : console.log('Successfully created HTML file!'))
