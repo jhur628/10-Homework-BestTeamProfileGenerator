@@ -19,22 +19,46 @@ const internPrompt = () => {
         {
             type: "input",
             name: "name",
-            message: "What's your intern's name?"
+            message: "What's your intern's name?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter a name`
+                }
+                return true
+            }
         },
         {
             type: "input",
             name: "id",
-            message: "What is the intern's ID?"
+            message: "What is the intern's ID?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter an ID`
+                }
+                return true
+            }
         },
         {
             type: "input",
             name: "email",
-            message: "What is the intern's email address?"
+            message: "What is the intern's email address?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter an email address`
+                }
+                return true
+            }
         },
         {
             type: "input",
             name: "school",
-            message: "What is your intern's school?"
+            message: "What is your intern's school?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter a school`
+                }
+                return true
+            }
         }
     ]).then(data => {
         const intern = new Intern(data.name, data.id, data.email, data.school);
@@ -49,22 +73,46 @@ const engineerPrompt = () => {
         {
             type: "input",
             name: "name",
-            message: "What's your engineer's name?"
+            message: "What's your engineer's name?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter a name`
+                }
+                return true
+            }
         },
         {
             type: "input",
             name: "id",
-            message: "What is the engineer's ID?"
+            message: "What is the engineer's ID?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter an ID`
+                }
+                return true
+            }
         },
         {
             type: "input",
             name: "email",
-            message: "What is the engineer's email address?"
+            message: "What is the engineer's email address?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter an email address`
+                }
+                return true
+            }
         },
         {
             type: "input",
             name: "github",
-            message: "What is your engineer's github user name?"
+            message: "What is your engineer's github user name?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter a github user name`
+                }
+                return true
+            }
         }
     ]).then(data => {
         const engineer = new Engineer(data.name, data.id, data.email, data.github);
@@ -79,22 +127,48 @@ const managerPrompt = () => {
         {
             type: "input",
             name: "name",
-            message: "Who is your team's manager?"
+            message: "Who is your team's manager?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter a name`
+                }
+                return true
+            }
         },
         {
             type: "input",
             name: "id",
-            message: "What is the manager's ID?"
+            message: "What is the manager's ID?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter an ID`
+                }
+                return true
+            }
         },
         {
             type: "input",
             name: "email",
-            message: "What is the manager's email address?"
+            message: "What is the manager's email address?",
+            validate: (data) => {
+                if (data === '') {
+                    return `Please enter an email address`
+                }
+                return true
+            }
         },
         {
             type: "input",
             name: "officeNumber",
-            message: "What is your manager's office number?"
+            message: "What is your manager's office number?",
+            validate: (data) => {
+                if (isNaN(data)) {
+                    return `Please enter numbers`
+                } else if (data === '') {
+                    return `Please enter the manager's office number`
+                }
+                return true
+            }
         }
     ]).then(data => {
         

@@ -19,7 +19,7 @@
 
   GitHub Repository: [https://github.com/jhur628/10-Homework-BestTeamProfileGenerator](https://github.com/jhur628/10-Homework-BestTeamProfileGenerator)
   
-  Sample HTML file: []()
+  Sample HTML file: [https://github.com/jhur628/10-Homework-BestTeamProfileGenerator/blob/main/dist/team.html](https://github.com/jhur628/10-Homework-BestTeamProfileGenerator/blob/main/dist/team.html)
   
   Video: []()
   
@@ -41,4 +41,6 @@
   Contact me at hur.john628.com. <br/>
   Github: https://github.com/jhur628/ <br/>
   ## Screenshots
-  ![Sample README 1](./Develop/assets/images/readmeGenerator1.jpg)
+  ![Team Profile Generator Manager](./assets/teamProfileGenerator1.jpg) </br>
+  ![Team Profile Generator Completed Prompts](./assets/teamProfileGenerator2.jpg) </br>
+  ![Team Profile Generator HTML](./assets/teamProfileGenerator3.jpg) </br>
