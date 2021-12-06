@@ -1,4 +1,4 @@
-# BestTeamProfileGenerator
+# Best Team Profile Generator
 
   ## Description
   I made a Team Profile Generator.
@@ -13,6 +13,8 @@
 
   When "Intern" is chosen, prompts about the team's intern will be presented. The prompts will ask questions and gather information on the intern's name, id, email, and school. These information will be added to the intern's card which will be added to HTML file.
 
+  Error handling has been added to prompts to ensure valid responses.
+
   When "Done with employee list" is chosen, the HTML file is made using the information the application has gathered from the prompts.
 
   Enjoy.
@@ -21,7 +23,7 @@
   
   Sample HTML file: [https://github.com/jhur628/10-Homework-BestTeamProfileGenerator/blob/main/dist/team.html](https://github.com/jhur628/10-Homework-BestTeamProfileGenerator/blob/main/dist/team.html)
   
-  Video: []()
+  Video: [https://watch.screencastify.com/v/rAzB2Sfs2dxVuHASGgGX](https://watch.screencastify.com/v/rAzB2Sfs2dxVuHASGgGX)
   
   ## Table of Contents
   ### [Installation](#Installation)
@@ -43,4 +45,4 @@
   ## Screenshots
   ![Team Profile Generator Manager](./assets/teamProfileGenerator1.jpg) </br>
   ![Team Profile Generator Completed Prompts](./assets/teamProfileGenerator2.jpg) </br>
-  ![Team Profile Generator HTML](./assets/teamProfileGenerator3.jpg) </br>
+  ![Team Profile Generator HTML](./assets/teamProfileGenerator3.jpg)
