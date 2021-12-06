@@ -23,7 +23,7 @@
   
   Sample HTML file: [https://github.com/jhur628/10-Homework-BestTeamProfileGenerator/blob/main/dist/team.html](https://github.com/jhur628/10-Homework-BestTeamProfileGenerator/blob/main/dist/team.html)
   
-  Video: [https://watch.screencastify.com/v/rAzB2Sfs2dxVuHASGgGX](https://watch.screencastify.com/v/rAzB2Sfs2dxVuHASGgGX)
+  Video: [https://watch.screencastify.com/v/6xdJeKtZ9iALfhUZ7Xy4](https://watch.screencastify.com/v/6xdJeKtZ9iALfhUZ7Xy4)
   
   ## Table of Contents
   ### [Installation](#Installation)
