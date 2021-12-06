@@ -45,6 +45,8 @@ const internPrompt = () => {
             validate: (data) => {
                 if (data === '') {
                     return `Please enter an email address`
+                } else if (data.includes('@') !== true) {
+                    return `Enter a valid email address`
                 }
                 return true
             }
@@ -99,6 +101,8 @@ const engineerPrompt = () => {
             validate: (data) => {
                 if (data === '') {
                     return `Please enter an email address`
+                } else if (data.includes('@') !== true) {
+                    return `Enter a valid email address`
                 }
                 return true
             }
@@ -153,6 +157,8 @@ const managerPrompt = () => {
             validate: (data) => {
                 if (data === '') {
                     return `Please enter an email address`
+                } else if (data.includes('@') !== true) {
+                    return `Enter a valid email address`
                 }
                 return true
             }
