@@ -2,6 +2,7 @@ const Employee = require("../lib/employee");
 
 const testEmployee = new Employee("John", 989, "john@john.com");
 
+// Test to return name, id, email, and role
 describe('Employee', () => {
     it('should return name as John', () => {
         expect(testEmployee.name).toBe("John")
