@@ -1,9 +1,9 @@
 // Function to plug in manager info card to HTML
 const renderManager = (managerData) => {
     return `
-        <div class="card col-lg-3">
+        <div class="card col-lg-3" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${managerData.name}</h5>
+                <h5 class="card-title bg-dark text-light">${managerData.name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Manager</h6>
                 <p class="card-text">ID: ${managerData.id}</p>
                 <a href="mailto:${managerData.email}">${managerData.email}</a>
@@ -16,9 +16,9 @@ const renderManager = (managerData) => {
 // Function to plug in engineers info cards to HTML
 const renderEngineer = (engineerData) => {
     return `
-        <div class="card col-lg-3">
+        <div class="card col-lg-3" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${engineerData.name}</h5>
+                <h5 class="card-title bg-dark text-light">${engineerData.name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
                 <p class="card-text">ID: ${engineerData.id}</p>
                 <a href="mailto:${engineerData.email}">${engineerData.email}</a>
@@ -31,9 +31,9 @@ const renderEngineer = (engineerData) => {
 // Function to plug in interns info cards to HTML
 const renderIntern = (internData) => {
     return `
-        <div class="card col-lg-3">
+        <div class="card col-lg-3" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${internData.name}</h5>
+                <h5 class="card-title bg-dark text-light">${internData.name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
                 <p class="card-text">ID: ${internData.id}</p>
                 <a href="mailto:${internData.email}">${internData.email}</a>
@@ -67,7 +67,7 @@ const renderHTML = (team) => {
         }
     }
 
-    const cards = cardArray;
+    const cards = cardArray.join('');
     const generateCards = generateHTML(cards)
     return generateCards
 }
@@ -79,11 +79,12 @@ const generateHTML = (cards) => {
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <title>Your Team!</title>
+            <link rel="stylesheet" href="./style.css">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         </head>
         <body>
             <header class="jumbotron jumbotron-fluid bg-dark text-light">
-                <div class="container">Your Team</div>
+                Your Team
             </header>
             <div class="row justify-content-center">
                 ${cards}
