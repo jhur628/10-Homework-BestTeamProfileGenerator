@@ -67,7 +67,7 @@ const renderHTML = (team) => {
         }
     }
 
-    const cards = cardArray.join('');
+    const cards = cardArray;
     const generateCards = generateHTML(cards)
     return generateCards
 }
